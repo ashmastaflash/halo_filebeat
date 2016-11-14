@@ -1,0 +1,12 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - "-"
+      input_type: stdin
+      document_type: halo_event
+      json.message_key: halo
+      json.keys_under_root: true
+output:
+  logstash:
+    hosts: ["${LOGSTASH_HOST}"]
