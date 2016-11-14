@@ -13,6 +13,6 @@ Set these environment variables:
 
 Run it like this:
 
-`docker run -it --rm -e HALO_API_KEY=$HALO_API_KEY -e HALO_API_SECRET_KEY=$HALO_API_SECRET_KEY -e LOGSTASH_HOST=$LOGSTASH_HOST --name halo_beat halo_beat `
+`docker run -it --rm -e HALO_API_KEY=$HALO_API_KEY -e HALO_API_SECRET_KEY=$HALO_API_SECRET_KEY -e LOGSTASH_HOST=$LOGSTASH_HOST --name docker.io/ashmastaflash/halo_filebeat halo_beat `
 
 On exit, it will note the timestamp from the last event captured.
